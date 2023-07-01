@@ -32,10 +32,10 @@ public class DuplicateLead {
 		driver.findElement(By.id("createLeadForm_firstName")).clear();
 		driver.findElement(By.id("createLeadForm_firstName")).sendKeys("billa");
 		driver.findElement(By.name("submitButton")).click();
-		System.out.println(driver.getTitle());
+		System.out.println("Title :"+driver.getTitle());
 		
 		
-		// createLeadForm_primaryEmail
+		
 	}
 
 }
