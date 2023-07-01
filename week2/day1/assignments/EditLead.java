@@ -29,8 +29,8 @@ public class EditLead {
 		driver.findElement(By.id("updateLeadForm_description")).clear();
 		driver.findElement(By.name("importantNote")).sendKeys("Important note");
 		driver.findElement(By.name("submitButton")).click();
-		System.out.println(driver.getTitle());
-		// createLeadForm_primaryEmail
+		System.out.println("Title :"+driver.getTitle());
+		
 	}
 
 }
