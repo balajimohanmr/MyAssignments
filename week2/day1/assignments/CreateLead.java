@@ -25,8 +25,8 @@ public class CreateLead {
 		Select s3 = new Select(driver.findElement(By.name("generalStateProvinceGeoId")));
 		s3.selectByVisibleText("New York");
 		driver.findElement(By.name("submitButton")).click();
-		System.out.println(driver.getTitle());
-		// createLeadForm_primaryEmail
+		System.out.println("Title :"+driver.getTitle());
+		
 	}
 
 }
