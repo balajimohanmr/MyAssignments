@@ -17,6 +17,7 @@ public class SecondTest {
 		driver.findElement(By.xpath("(//div[@id='brandsRefinements']//i)[1]")).click();
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("(//div[@id='brandsRefinements']//i)[2]")).click();
+		Thread.sleep(1000);
 		driver.findElement(By.cssSelector("span.a-dropdown-container")).click();
 		driver.findElement(By.linkText("Newest Arrivals")).click();
 		System.out.println("Info of the first resulting bag : \n"+"Name : "+driver.findElement(By.xpath("//div[@data-cel-widget='search_result_1']//h2")).getText()+"\nDiscounted Price : "+driver.findElement(By.xpath("//div[@data-cel-widget='search_result_1']//span[@class='a-price-whole']")).getText());
