@@ -24,10 +24,8 @@ public class FirstTest {
 		driver.findElement(By.xpath("//a[contains(.,'Select Seat')]")).click();
 		driver.findElement(By.xpath("(//div[@class='seats']//li[not(contains(@class,'unavailable'))]/a)[1]")).click();
 		System.out.println("Seats selected : "+driver.findElement(By.id("seatnos")).getText() + "/n"+"Total fare : "+driver.findElement(By.id("ticketfare")).getText() );
-		driver.findElement(By.xpath("//span[normalize-space()='Boarding Point']")).click();
-		driver.findElement(By.xpath("//label[@for='BoardingPoint58']")).click();
-		driver.findElement(By.xpath("//span[normalize-space()='Dropping Point']")).click();
-		driver.findElement(By.xpath("//label[@for='DroppingPoint122']")).click();
+		new Select(driver.findElement(By.id("boardingpoint_id"))).selectByIndex(1);
+		new Select(driver.findElement(By.id("droppingpoint_id"))).selectByIndex(1);
 		System.out.println("Title of the page is :"+driver.getTitle());
 		driver.close();
 		
