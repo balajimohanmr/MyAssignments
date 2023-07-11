@@ -8,10 +8,10 @@ public class SortingUsingCollection {
 	public static void main(String[] args) {
 		String companies[] = {"HCL","Aspire Systems","Wipro","CTS"};
 		Set<String> s = new TreeSet<String>(Arrays.asList(companies));
-		Object[] reverse =s.toArray();
-		for (int i=reverse.length-1;i>=0;i--) {
-			if (i==0) System.out.print(reverse[i]);
-			else System.out.print(reverse[i]+",");
+		Object[] sortedCompanies =s.toArray();
+		for (int i=sortedCompanies.length-1;i>=0;i--) {
+			if (i==0) System.out.print(sortedCompanies[i]);
+			else System.out.print(sortedCompanies[i]+",");
 		}
 		
 	}
