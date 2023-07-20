@@ -43,7 +43,7 @@ public class ServiceNow {
 			System.out.println("Order has been placed successfully");
 		else
 			System.out.println("Order placement failed");
-		System.out.println("Request number is : " + driver.findElement(By.id("requesturl")));
+		System.out.println("Request number is : " + driver.findElement(By.id("requesturl")).getText());
 		FileUtils.copyFile(driver.getScreenshotAs(OutputType.FILE), new File("./snaps/Marathon2-servicenow.png"));
 	}
 
